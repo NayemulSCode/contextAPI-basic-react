@@ -6,7 +6,7 @@ import Home from './components/Home/Home';
 export const CategoryContext = createContext();
 
 function App() {
-  const [category, setCategory] = useState(0);
+  const [category, setCategory] = useState([]);
   return (
     <CategoryContext.Provider value={[category, setCategory]} >
       <Header />

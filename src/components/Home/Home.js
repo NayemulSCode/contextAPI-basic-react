@@ -8,6 +8,10 @@ const Home = () => {
         <div>
             <h1>Home component</h1>
             <button onClick={()=> setCategory(category + 1)}>Increment from home</button>
+            <button onClick={()=> setCategory('phone')}>Phone</button>
+            <button onClick={()=> setCategory('laptop')}>Laptop</button>
+            <button onClick={()=> setCategory("camera")}>Camera</button>
+
             <Category />
         </div>
     );
